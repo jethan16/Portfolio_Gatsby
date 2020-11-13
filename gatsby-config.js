@@ -2,13 +2,22 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby TypeScript + Contentful Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Ethan Jones | Portfolio`,
+    // description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `Ethan Jones`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `poppins\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: 'swap',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
