@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Ethan Jones - Portfolio`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -34,16 +34,16 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: 'n53c5i9xxs89',
+        accessToken: 'NJCxwjIWnX7lUquu-XvGD-A6hf6EKlZUJLNtcvzvFHY',
       },
     },
-    {
-      resolve: `gatsby-plugin-graphql-codegen`,
-      options: {
-        fileName: `types/graphql-types.d.ts`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-graphql-codegen`,
+    //   options: {
+    //     fileName: `types/graphql-types.d.ts`,
+    //   },
+    // },
     /* eslint-enable @typescript-eslint/camelcase */
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
