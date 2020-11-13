@@ -10,13 +10,22 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          `limelight`,
-          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+          {
+            family: `Montserrat`,
+            variants: [`300`, `400`, `600`, `700`],
+          },
+          {
+            family: `Open Sans`,
+            variants: [`300`, `400`, `500`, `700`],
+          },
+          {
+            family: `Work Sans`,
+            variants: [`300`, `400`, `500`, `700`],
+          },
         ],
-        display: 'swap',
       },
     },
     {
