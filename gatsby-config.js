@@ -3,22 +3,25 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Ethan Jones | Portfolio`,
-    // description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `Ethan Jones`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [
           {
-            family: `Montserrat`,
+            family: `raleway`,
             variants: [`300`, `400`, `600`, `700`],
           },
           {
-            family: `Open Sans`,
+            family: `raleway dots`,
+            variants: [`300`, `400`, `600`, `700`],
+          },
+          {
+            family: `Rubik`,
             variants: [`300`, `400`, `500`, `700`],
           },
           {
